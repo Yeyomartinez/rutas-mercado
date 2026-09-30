@@ -1,0 +1,37 @@
+﻿name: mercado_rutas
+description: Rutas de cobertura total por sectores catastrales con navegacion guiada.
+publish_to: "none"
+version: 2.6.0+15
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^13.0.2
+  flutter_tts: ^4.2.0
+  shared_preferences: ^2.3.3
+  # 1.7.0 viene con el Android roto (Unresolved reference IsEnabledMessage)
+  wakelock_plus: 1.5.2
+  flutter_compass: ^0.8.1
+  url_launcher: ^6.3.1
+  flutter_overlay_window: ^0.4.5
+  path_provider: ^2.1.4
+  share_plus: ^10.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sectors.geojson
+    - assets/routes_index.json
+    - assets/sectors_streets.json
+    - assets/google_api_key.txt
+    - assets/routes/

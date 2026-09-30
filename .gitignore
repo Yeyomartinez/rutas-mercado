@@ -1,0 +1,19 @@
+# Pipeline (Python)
+pipeline/cache/
+pipeline/__pycache__/
+*.pyc
+
+# Android Gradle build output (not caught by app/android/.gitignore)
+app/android/build/
+app/android/app/build/
+app/android/.gradle/
+
+# Claude Code session state
+.claude/
+
+# Clave real de Google Routes API (no subir; ver google_api_key.txt.example)
+**/google_api_key.txt
+
+# OS junk
+Thumbs.db
+.DS_Store
